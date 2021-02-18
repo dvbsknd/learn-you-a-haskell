@@ -3,8 +3,16 @@ main = do
   if null line
     then return ()
     else do
-      putStrLn $ reverseWords line
+      putSpread $ reverseWords line
+      putStrLn ""
       main
 
 reverseWords :: String -> String
 reverseWords = unwords . map reverse . words
+
+putSpread :: String -> IO ()
+putSpread [] = return ()
+putSpread (x:xs) = do
+  putChar x
+  putChar ' '
+  putSpread xs
