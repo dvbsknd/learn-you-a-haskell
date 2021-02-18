@@ -1,8 +1,8 @@
+import Control.Monad
+
 main = do
   line <- getLine
-  if null line
-    then return ()
-    else do
+  when (not . null $ line) $ do
       putSpread $ reverseWords line
       putStrLn ""
       main
