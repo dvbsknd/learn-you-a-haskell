@@ -1,0 +1,1 @@
+This folder contains notes from following [this supplementary tutorial](https://www.snoyman.com/blog/2017/01/functors-applicatives-and-monads/) but Michael Snoyman on Functors, Applicatives and Monads.
